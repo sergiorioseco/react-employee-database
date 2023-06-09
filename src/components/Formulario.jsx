@@ -1,5 +1,6 @@
 import { useState, useEffect  } from 'react';
 import Alert from './Alert.jsx';
+import Listado from './Listado.jsx'
 import PropTypes from 'prop-types';
 
 const Formulario = ({listadoInicial}) => {
@@ -128,6 +129,7 @@ const Formulario = ({listadoInicial}) => {
         {error === 2 ? <Alert color='bg-danger' text='Las contraseñas no coinciden'></Alert> : null}
         {error === 3 ? <Alert color='bg-danger' text='Debe ingresar un correo válido'></Alert> : null}
       </form>
+      <Listado usuarios={usuarios}></Listado>
     </>
   );
 };
