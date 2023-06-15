@@ -15,13 +15,13 @@ const Listado = ({ usuarios }) => {
         </thead>
         <tbody>
         {usuarios.map((usuario) => (
-                    <tr key={usuario.id}>
-                      <td>{usuario.nombre}</td>
-                      <td>{usuario.correo}</td>
-                      <td>{usuario.edad}</td>
-                      <td>{usuario.cargo}</td>
-                      <td>{usuario.telefono}</td>
-                    </tr>
+                <tr key={usuario.id}>
+                  <td>{usuario.nombre}</td>
+                  <td>{usuario.correo}</td>
+                  <td>{usuario.edad}</td>
+                  <td>{usuario.cargo}</td>
+                  <td>{usuario.telefono}</td>
+                </tr>
         ))}
         </tbody>
         </table>
